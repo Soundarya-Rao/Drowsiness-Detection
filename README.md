@@ -120,8 +120,8 @@ Typical values: open-eye EAR about 0.24–0.34, closed-eye EAR about 0.05–0.15
 ## Getting started (Windows)
 
 ```powershell
-git clone https://github.com/Soundarya-Rao/drowsiness-detection-system.git
-cd drowsiness-detection-system
+git clone https://github.com/Soundarya-Rao/Drowsiness-Detection.git
+cd Drowsiness-Detection
 
 python -m venv venv
 .\venv\Scripts\Activate.ps1
