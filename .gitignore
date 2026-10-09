@@ -1,0 +1,48 @@
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+
+# Datasets (Must not be committed)
+data/downloads/
+data/eyes/
+data/yawn/
+*.zip
+*.tar.gz
+
+# Pretrained model downloaded automatically on first run
+models/face_landmarker.task
+
+# Debug and scratch files/images
+scratch/
+debug/
+*.log
+*.tmp
+debug_*.png
+test_*.png
+temp_*.png
+
+# IDE and Editor settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# Local configuration and credentials
+*.local
+local_settings.py
+.env
+.env.*
+!.env.example
+kaggle.json

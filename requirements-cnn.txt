@@ -1,0 +1,3 @@
+# Optional dependencies for CNN eye experiment (--show-cnn and src/train_eye_model.py)
+tensorflow==2.21.0
+scikit-learn==1.9.1
