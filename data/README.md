@@ -11,7 +11,14 @@ This project supports optional offline machine learning experiments (CNN trainin
 ### A. MRL Eye Dataset (Open vs. Closed Eyes)
 - **Dataset Name**: MRL Infrared Eye Images Dataset for Drowsiness Detection (Forked Version)
 - **Kaggle Identifier**: `imadeddinedjerarda/mrl-eye-dataset`
-- **Purpose**: Contains >84,000 infrared eye crop images categorized into awake (open) and sleepy (closed) eyes across 37 subjects under varied lighting, glasses, and head angles. Used for training the legacy CNN classifier (`src/train_eye_model.py` -> `models/eye_model.keras`).
+- **Kaggle URL**: https://www.kaggle.com/datasets/imadeddinedjerarda/mrl-eye-dataset
+- **Source**: Forked from the original MRL Eye Dataset by Radovan Fusek (VSB - Technical University of Ostrava)
+- **Structure in Folder**: Unzips into `data/downloads/mrl/data/` with pre-split sets:
+  - `train/`: `awake/` (25,770) and `sleepy/` (25,167)
+  - `val/`: `awake/` (8,591) and `sleepy/` (8,389)
+  - `test/`: `awake/` (8,591) and `sleepy/` (8,390)
+  - Metadata files: `readme.md`, `labels.txt`, `get_info.py`, `split_data.py`
+- **Purpose**: Contains 84,898 infrared eye crop images across 37 subjects under varied lighting, glasses, and sensor resolutions. Used for training and evaluating the eye state classifier (`src/train_eye_model.py` -> `models/eye_model.keras`).
 - **Download Command**:
   ```bash
   kaggle datasets download -d imadeddinedjerarda/mrl-eye-dataset -p data/downloads/mrl --unzip
